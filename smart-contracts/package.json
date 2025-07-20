@@ -3,7 +3,17 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "test:coverage": "hardhat coverage",
+    "test:gas": "REPORT_GAS=true hardhat test",
+    "deploy:local": "hardhat run scripts/deploy.ts --network localhost",
+    "deploy:sei-testnet": "hardhat run scripts/deploy.ts --network sei-testnet",
+    "deploy:sei-mainnet": "hardhat run scripts/deploy.ts --network sei-mainnet",
+    "verify:sei-testnet": "hardhat verify --network sei-testnet",
+    "verify:sei-mainnet": "hardhat verify --network sei-mainnet",
+    "node": "hardhat node",
+    "clean": "hardhat clean"
   },
   "keywords": [],
   "author": "",
