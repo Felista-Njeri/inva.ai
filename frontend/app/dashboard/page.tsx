@@ -122,7 +122,7 @@ const Dashboard = () => {
                 <Brain className="w-5 h-5 text-white" />
               </div>
               <div>
-                <h1 className="text-2xl font-bold">InvoiceAI Dashboard</h1>
+                <h1 className="text-2xl font-bold">InvaAI Dashboard</h1>
                 <p className="text-sm text-muted-foreground">Welcome back, Sarah Chen</p>
               </div>
             </div>
@@ -131,7 +131,7 @@ const Dashboard = () => {
                 <Wallet className="w-4 h-4 mr-2" />
                 Connect Wallet
               </Button>
-              <Button variant="gradient" size="sm" onClick={() => router.push('/create-invoice')}>
+              <Button variant="gradient" className="hover:scale-95" size="sm" onClick={() => router.push('/create-invoice')}>
                 <Plus className="w-4 h-4 mr-2" />
                 Create Invoice
               </Button>
